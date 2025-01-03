@@ -1,0 +1,30 @@
+<!-- retailer-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retailer Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Retailer Dashboard</h1>
+    
+    <!-- Scanner button -->
+    <button id="openScannerButton">Scan QR Code</button>
+    
+    <div id="scannerContainer" style="display: none;">
+      <h2>Scan a User's QR Code</h2>
+      <video id="qrScannerVideo" width="300" height="200"></video>
+      <div id="qrCodeResult"></div>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logoutButton">Logout</button>
+  </div>
+
+  <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+  <script src="retailer-dashboard.js"></script>
+</body>
+</html>
